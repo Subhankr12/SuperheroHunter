@@ -1,0 +1,115 @@
+/* general styles */
+body {
+  margin: 0;
+  background: rgba(128, 128, 128, 0.068);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+i {
+  font-size: 2rem;
+}
+
+.mt-15 {
+  margin-top: 15rem;
+}
+
+/* search box style */
+#search-box {
+  border: none;
+  outline: none;
+  line-height: 0;
+  background: transparent;
+}
+
+/* search results styles */
+#search-list {
+  height: 60vh;
+  overflow-y: scroll;
+}
+#search-list li {
+  background: rgba(128, 128, 128, 0.185);
+  margin: 0.1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s;
+  color: grey;
+}
+#search-list li:hover {
+  background: rgba(128, 128, 128, 0.63);
+  color: white;
+}
+#search-list li .hero-image {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+}
+#search-list li:hover .hero-image {
+  box-shadow: 0 0 12px 10px white;
+}
+
+/* favorite superhero cards styles */
+.hero-card {
+  margin: 1rem;
+  color: white;
+  height: 20rem;
+  width: 15rem;
+  background-size: contain;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.black-layer {
+  background: rgba(0, 0, 0, 0.568);
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+}
+
+/* superhero detail page styles */
+#superhero-details {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+#superhero-details li {
+  margin: 0 0 0.5rem 0;
+  padding: 2rem 3rem;
+  background: rgba(0, 0, 0, 0.137);
+  font-size: 25px;
+}
+#superhero-details li p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* notification styles*/
+#toast {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+.toast-error {
+  background: #ff5a5a;
+}
+.toast-success {
+  background: #8bc34a;
+}
