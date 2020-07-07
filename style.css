@@ -31,6 +31,7 @@ i {
   outline: none;
   line-height: 0;
   background: transparent;
+  width: 100%;
 }
 
 /* search results styles */
@@ -81,7 +82,7 @@ i {
 
 /* superhero detail page styles */
 #superhero-details {
-  height: 75vh;
+  height: 77vh;
   overflow-y: scroll;
 }
 
@@ -90,6 +91,9 @@ i {
   padding: 2rem 3rem;
   background: rgba(0, 0, 0, 0.137);
   font-size: 25px;
+}
+#superhero-details li div {
+  width: 100%;
 }
 #superhero-details li p {
   margin: 0;
@@ -112,4 +116,46 @@ i {
 }
 .toast-success {
   background: #8bc34a;
+}
+
+@media screen and (max-width: 786px) {
+  .display-2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+  .h3 {
+    font-size: 1rem;
+  }
+  .display-2 {
+    font-size: 2rem;
+  }
+  #search-list {
+    height: 75vh;
+  }
+  #search-list li .hero-image {
+    height: 3rem;
+    width: 3rem;
+  }
+  #superhero-details {
+    display: flex;
+    overflow-x: scroll;
+    width: 55vh;
+    height: 55vh;
+  }
+  #superhero-details li {
+    margin-right: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 20px;
+  }
+  #superhero-details li div {
+    width: 40vh;
+  }
+  #superhero-image img {
+    width: 50%;
+  }
 }

@@ -10,17 +10,18 @@ const homePage = (() => {
   var renderSearchResults = (result) => {
     var listItem = document.createElement("li");
     listItem.classList.add(
-      "d-flex",
+      "d-lg-flex",
       "justify-content-between",
       "align-items-center",
-      "hero-details"
+      "hero-details",
+      "text-center"
     );
     listItem.setAttribute("id", result.id);
-    listItem.innerHTML = `<img src=${result.image.url} alt="not found" class="hero-image"/> <span class="h3 ml-5">${result.name}</span>`;
+    listItem.innerHTML = `<img src=${result.image.url} alt="not found" class="hero-image"/> <span class="h3 ml-lg-5">${result.name}</span>`;
 
     // create like button in suggestion list
     var favButton = document.createElement("button");
-    favButton.classList.add("btn");
+    favButton.classList.add("mt-2", "btn");
 
     if (favorites.includes(result.id)) {
       favButton.innerHTML = "Remove from Favorites";

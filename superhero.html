@@ -27,21 +27,15 @@
       <a class="navbar-brand" href="./index.html">Superhero Hunter</a>
       <button
         class="navbar-toggler"
-        type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-center">
           <li class="nav-item">
-            <a class="nav-link" href="./index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="./index.html">Home </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./favorites.html">Favorites</a>
@@ -51,15 +45,15 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row mt-5 ml-5 text-muted">
+      <div class="row mt-4 mx-auto text-muted">
         <div
           id="superhero-image"
-          class="col-4 animate__animated animate__fadeInRight"
+          class="col-12 col-lg-4 animate__animated animate__fadeInRight text-center"
         ></div>
 
-        <div class="col-8">
+        <div class="col-12 col-lg-8">
           <div
-            class="col-12 animate__animated animate__fadeInRight"
+            class="col-12 animate__animated animate__fadeInRight text-center text-lg-left"
             id="superhero-name"
           ></div>
 
@@ -68,29 +62,49 @@
             class="text-center animate__animated animate__fadeInRight"
           >
             <li id="powerstats">
-              <h3>POWER STATS</h3>
+              <div>
+                <h3>POWER STATS</h3>
+              </div>
             </li>
 
             <li id="biography">
-              <h3>BIOGRAPHY</h3>
+              <div><h3>BIOGRAPHY</h3></div>
             </li>
 
             <li id="appearance">
-              <h3>APPEARANCE</h3>
+              <div><h3>APPEARANCE</h3></div>
             </li>
 
             <li id="work">
-              <h3>WORK</h3>
+              <div><h3>WORK</h3></div>
             </li>
 
             <li id="connections">
-              <h3>CONNECTIONS</h3>
+              <div><h3>CONNECTIONS</h3></div>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
+    <!-- for bootstrap functionalities -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my script -->
     <script src="./js/superhero.js"></script>
     <script>
       heroPage.init();

@@ -10,7 +10,8 @@ const favoritePage = (() => {
     heroCard.classList.add(
       "hero-card",
       "animate__animated",
-      "animate__fadeInRight"
+      "animate__fadeInRight",
+      "mx-auto"
     );
     // set hero card bg as hero's image
     heroCard.style.backgroundImage = `url(${data.image.url})`;
