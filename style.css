@@ -142,9 +142,9 @@ i {
     width: 3rem;
   }
   #superhero-details {
-    display: flex;
-    overflow-x: scroll;
-    /* width: 20vh; */
+    /* display: flex; */
+    /* overflow-x: scroll; */
+    width: 10vh;
     height: 60vh;
   }
   #superhero-details li {
