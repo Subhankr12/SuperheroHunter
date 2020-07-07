@@ -144,7 +144,7 @@ i {
   #superhero-details {
     display: flex;
     overflow-x: scroll;
-    width: 55vh;
+    width: 47vh;
     height: 55vh;
   }
   #superhero-details li {
